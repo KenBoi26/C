@@ -1,0 +1,44 @@
+STORAGE CLASSES
+
+1. auto - default
+	- only accessed in the block function and not outside.
+	- default value: garbage value.
+	- stored in the stack memory.
+	- life: end of the block
+	- SYNTAX: auto int x;
+
+
+2. extern - AKA global variable
+	  - accessed from any block of code from the program.
+	  - it can be overwritten and changed in another block.
+	  - a normal var can be changed to extern by adding extern before declaring it.
+	  - default value: 0.
+	  - storage: data segment
+	  - SYNTAX: extern int x;
+scanf("%d",&x);
+
+3. static - preserves value even if they're out of their scope
+	  - initialisation can happen only once.
+	  e.g. for(int i=0; i<3; i++){
+		static int x = 5;
+		int p = 5;
+		x++;
+		p++;
+		printf("%d %d",x,p);
+		}
+	  - in the above code x will be 5 6 7 but p will be 6 only
+	  - behave like p outside the loop.
+
+4. Register - same functionality as auto.
+	    - stores few variables in the register of the microprocessor
+	    - improves runtime
+	    - pointers are not allowed.
+	    - storage class: CPU register
+	    - register int x;
+
+
+
+
+SYNTAX:
+ storage_class var_data_type var_name;
+
