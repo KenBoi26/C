@@ -43,7 +43,30 @@ int main(){
 
     printf("str1 is: %s\n", str1);
 
+
+    // strcat(): Concatenates the two strings. It modifies the first argument.
     
+    char example[100];
+
+    strcpy(example, "Kenneth ");
+    strcat(example, "is awesome!!");
+
+    printf("%s\n", example);
+
+
+    // strcmp(str1, str2): compares 2 strings lexicographically and returns 0, 1, -1
+
+
+    // if output is 0, then both strings are equal
+    
+    // if output is 1, then str1 is greater than str2
+    
+    // if output is -1, then str1 is less than str2
+
+    char str1[] = "ABC";
+    char str2[] = "abc";
+
+    printf("Return value of strcmp is: %d\n", strcmp(str1, str2));
     
     
     return 0;
