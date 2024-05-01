@@ -33,4 +33,18 @@ int main(){
 
     printf("After copying str3 is: %s\n", str3);
     printf("After copying str4 is: %s\n", str4);
+
+
+    // strncpy(char *dest, char *source, int n);
+
+    char str1[40];
+
+    strncpy(str1, "Kenneth is awesome!!",10);
+
+    printf("str1 is: %s\n", str1);
+
+    
+    
+    
+    return 0;
 }
