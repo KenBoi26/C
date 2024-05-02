@@ -20,8 +20,8 @@ int main()
 
     return 0;
 }
-/*
-// Functions
+
+
 
 #include <stdio.h>
 
@@ -71,5 +71,3 @@ main ()
 
   return 0;
 }
-
-*/
