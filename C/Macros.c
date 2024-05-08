@@ -47,7 +47,7 @@ int main(){
     
     return 0;
 }
-*/
+
 
 // Function-Like Macros
 
@@ -63,5 +63,21 @@ int main(){
     printf("The maximum value between %d and %d is %d\n",a,b,MAX(a,b));
     
     
+    return 0;
+}
+*/
+
+
+#define Pi 3.14
+
+#include <stdio.h>
+
+int main(){
+
+    int x = 5;
+    float areaofCircle = Pi*x*x;
+
+    printf("Area found is: %.2f", areaofCircle);
+
     return 0;
 }
