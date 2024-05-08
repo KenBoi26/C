@@ -6,6 +6,12 @@
 
 int main(){
 
+
+    // taking multiple words as input
+
+    char string[100];
+    scanf("%[^\n]s",&string);
+
     // Initialisation of strings
 
     char str1[20] = "Kenneth";
